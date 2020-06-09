@@ -20,15 +20,15 @@
       <div class="content">
          <header class="header">
             <div class="container">
-               <div class="row header__contacts">
-                  <div class="col-md-3">
-                     <a href="#"><img src="img/Logo.png" alt="Logo"></a>
+               <div class="row header__contacts d-flex">
+                  <div class="col-lg-12 col-xl-3 d-flex justify-content-center ">
+                     <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
                   </div>
-                  <div class="col-md-1 d-flex justify-content-center" style="font-size: 12px;">
+                  <div class="col-md-4 col-xl-1 d-flex justify-content-center mt-xl-0 mt-4 header__address">
                      г. Тюмень ул.
                      Автогенная 105 к2
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xl-2 d-flex justify-content-center mt-xl-0 mt-4">
                      <div class="social">
                         <a href="#"><img src="img/icons/vk.svg" alt=""></a>
                         <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
@@ -37,24 +37,48 @@
                         <a href="#"><img src="img/icons/facebook.svg" alt=""></a>
                      </div>
                   </div>
-                  <div class="col-md-2 d-flex flex-column  ">
+                  <div
+                     class="col-md-4 col-xl-2 d-flex flex-column align-items-xl-start align-items-center mt-xl-0 mt-4">
                      <span class="header__worktime">График работы: </span>
                      <span>
                         пн-сб 9:00-19:00, <br>
                         вс - 10:00 - 17:00
                      </span>
                   </div>
-                  <div class="col-md-2 d-flex flex-column">
+                  <div
+                     class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-start mt-xl-0 mt-4">
                      <a href="#" class="header__mobile">3322 - 685-395</a>
                      <a href="#" class="header__mobile">522-462</a>
                      <a href="#" class="header__insta">@avtovost2</a>
                   </div>
-                  <div class="col-md-2 text-right">
+                  <div class="col-md-4 d-xl-none"></div>
+                  <div class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-end mt-xl-0 mt-4">
                      <a href="#" class="header__mobile">
                         8-912-040-43-96
                      </a>
                      <div class="accent-btn">
-                        <a>Оставить заявку</a>
+                        <a class="popup-with-form" href="#test-form">Оставить заявку</a>
+                        <form id="test-form" class="mfp-hide white-popup-block form-order">
+                           <div class="form-order-block">
+                              <h2 class="basket__title">Наш менеджер с вами свяжется</h2>
+                              <ul>
+                                 <li>
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Имя" required="">
+                                 </li>
+                                 <li>
+
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Телефон" required="">
+
+                                 </li>
+                                 <li>
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Почта" required="">
+                                 </li>
+                              </ul>
+                              <button type="submit" class="basket__quantity-btns-btn mt-4">
+                                 продолжить
+                              </button>
+                           </div>
+                        </form>
                      </div>
                   </div>
                </div>
@@ -64,6 +88,11 @@
             <div class="row">
                <div class="col">
                   <nav class="row header__nav">
+                     <div class="header__menu-burger">
+                        <div class="header__burger">
+                           <span></span>
+                        </div>
+                     </div>
                      <div class="col-md-6 ">
                         <ul class="header__list">
                            <li class="header__li"><a href="#">О КОМПАНИИ</a></li>
@@ -76,7 +105,7 @@
                         <a class="header__backet">
                            Корзина
                         </a>
-                        <a>
+                        <a class="header__backet-text">
                            ВАША КОРЗИНА ПУСТА
                         </a>
                      </div>
@@ -88,21 +117,25 @@
             <div class="product">
                <div class="container">
                   <div class="row">
-                     <div class="col-lg-6 product__photo">
-                        <div class="row">
+                     <div class="col-lg-5 product__photo d-flex justify-content-center">
+                        <div class="row tabs">
                            <nav class="col-4 tabs__items d-flex align-items-center flex-column justify-content-center">
-                              <a style="margin-bottom: 15px;" class="tabs__item" href="#01"><img
-                                    src="img/wheel-item.png" alt=""></a>
-                              <a class="product__photo-link tabs__item" href="#02"><img src="img/wheel-item.png"
-                                    alt=""></a>
+                              <span style="margin-bottom: 15px;" class="tabs__link"><img src="img/wheel-item.png"
+                                    alt=""></span>
+                              <span class="product__photo-link tabs__link"><img src="img/wheel-item.png"
+                                    alt=""></span>
                            </nav>
                            <div class="col-8 d-flex align-items-center justify-content-center tabs__body">
-                              <img class="tabs__block" id="01" src="img/wheel-item.png" alt="">
-                              <img class="tabs__block" id="02" src="img/wheel-item.png" alt="">
+                              <a href="img/wheel-item.png" class="image-popup-no-margins">
+                                 <img class="tabs__block image-popup-no-margins tabs__content" id="01" src="img/wheel-item.png"
+                                    alt="">
+                              </a>
+                              <a href="img/wheel-item.png" class="image-popup-no-margins">
+                                 <img class="tabs__block tabs__content" id="02" src="img/wheel-basket.png" alt=""></a>
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6 product__text">
+                     <div class="col-lg-6 offset-lg-1 product__text mt-lg-0 mt-5">
                         <div class="row">
                            <div class="col">
                               <div class="product__breadcrums breadcrums">
@@ -137,28 +170,35 @@
                               </div>
                            </div>
                         </div>
-                        <div class="row ">
+                        <div class="row">
                            <div class="col">
-                              <div class="product__order">
+                              <div data-da="product__order-replace,0, 1200" class="product__order">
                                  <p><span>В наличии:</span> г. Тюмень ул. Автогенная 105 к2 <span>- 0 шт</span></p>
                                  <div class="product__order-body">
-                                    <div class="product__order-price">
+                                    <div class="product__order-price mt-3">
                                        <span class="product__order-price-red">1 690 ₽</span>
                                        <span>4 шт: 6 760p</span>
                                     </div>
                                     <a href="#">
-                                       <div class="product__order-btn">
+                                       <div class="product__order-btn mt-3">
                                           <img src="img/icons/basket.svg" alt="">
                                           <span>купить</span>
                                        </div>
                                     </a>
                                     <a href="#">
-                                       <div class="product__order-btn ml-4">
+                                       <div class="product__order-btn ml-md-4  mt-3">
                                           <span>Бронировать</span>
                                        </div>
                                     </a>
                                  </div>
                               </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row" style="width: 100%">
+                        <div class="col product__order-replace-col">
+                           <div class="product__order-replace">
+
                            </div>
                         </div>
                      </div>
@@ -180,7 +220,7 @@
                      </div>
                   </div>
                   <div class="row ">
-                     <div class="col d-flex " style="padding: 0px;">
+                     <div class="col d-flex flex-wrap flex-md-nowrap  " style="padding: 0px;">
                         <div class="product__vantage-item">
                            <img src="img/icons/delivery.svg" alt="">
                            <div class="product__vantage-body">
@@ -215,21 +255,23 @@
    <footer class="footer">
       <div class="container">
          <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3 d-flex justify-content-center">
                <a href="#"><img src="img/Logo.png" alt="Logo"></a>
             </div>
-            <div class="col-md-3 d-flex flex-column footer__rules">
+            <div
+               class="col-lg-3  col-sm-6 d-flex flex-column footer__rules justify-content-start align-items-sm-start align-items-center  mb-sm-5 mt-sm-5 mt-lg-0">
                <span>«Авто восток», Тюмень, 2016-2020</span>
                <span>Все права защищены.</span>
                <span>Не является публичной офертой</span>
             </div>
-            <div class="col-md-4 ">
+            <div
+               class="col-xl-4 col-lg-3 col-sm-6 d-flex flex-column justify-content-start align-items-center mt-sm-5 mb-sm-5 mt-lg-0">
                <div class="footer__links">
                   <a>Политика конфиденциальности</a>
                   <a>Согласие на обработку персональных данных</a>
                </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-xl-2 col-lg-3  d-flex flex-column justify-content-start align-items-center">
                <div class="accent-btn">
                   <a>Оставить заявку</a>
                </div>

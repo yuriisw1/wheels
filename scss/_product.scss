@@ -1,12 +1,8 @@
 .product {
    padding: 40px 0px 45px 0px;
-   &__photo {
-   }
-   &__photo-link {
-   }
-   &__text {
-   }
-   &__breadcrums {
+   &__photo{
+      box-shadow: 0 0 18px 3px rgba(44, 40, 40, 0.12);
+      border-radius: 5px;
    }
    &__title {
       font-size: 32px;
@@ -157,17 +153,4 @@
    }
 }
 
-.tabs {
-   &__items {
-   }
-   &__item {
-   }
-   &__body {
-   }
-   &__block {
-      display: none;
-      &:target {
-         display: block;
-      }
-   }
-}
+

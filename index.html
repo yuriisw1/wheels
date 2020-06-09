@@ -20,15 +20,15 @@
       <div class="content">
          <header class="header">
             <div class="container">
-               <div class="row header__contacts">
-                  <div class="col-md-3">
-                     <a href="#"><img src="img/Logo.png" alt="Logo"></a>
+               <div class="row header__contacts d-flex">
+                  <div class="col-lg-12 col-xl-3 d-flex justify-content-center ">
+                     <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
                   </div>
-                  <div class="col-md-1 d-flex justify-content-center" style="font-size: 12px;">
+                  <div class="col-md-4 col-xl-1 d-flex justify-content-center mt-xl-0 mt-4 header__address">
                      г. Тюмень ул.
                      Автогенная 105 к2
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-xl-2 d-flex justify-content-center mt-xl-0 mt-4">
                      <div class="social">
                         <a href="#"><img src="img/icons/vk.svg" alt=""></a>
                         <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
@@ -37,24 +37,49 @@
                         <a href="#"><img src="img/icons/facebook.svg" alt=""></a>
                      </div>
                   </div>
-                  <div class="col-md-2 d-flex flex-column  ">
+                  <div
+                     class="col-md-4 col-xl-2 d-flex flex-column align-items-xl-start align-items-center mt-xl-0 mt-4">
                      <span class="header__worktime">График работы: </span>
                      <span>
                         пн-сб 9:00-19:00, <br>
                         вс - 10:00 - 17:00
                      </span>
                   </div>
-                  <div class="col-md-2 d-flex flex-column">
+                  <div
+                     class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-start mt-xl-0 mt-4">
                      <a href="#" class="header__mobile">3322 - 685-395</a>
                      <a href="#" class="header__mobile">522-462</a>
                      <a href="#" class="header__insta">@avtovost2</a>
                   </div>
-                  <div class="col-md-2 text-right">
+                  <div class="col-md-4 d-xl-none"></div>
+                  <div class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-end mt-xl-0 mt-4">
                      <a href="#" class="header__mobile">
                         8-912-040-43-96
                      </a>
                      <div class="accent-btn">
-                        <a>Оставить заявку</a>
+                        <a class="popup-with-form" href="#test-form">Оставить заявку</a>
+                        <form id="test-form" class="mfp-hide white-popup-block form-order">
+                           <div class="form-order-block">
+                              <h2 class="basket__title">Наш менеджер с вами свяжется</h2>
+                              <ul>
+                                 <li>
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Имя" required="">
+                                 </li>
+                                 <li>
+
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Телефон"
+                                       required="">
+
+                                 </li>
+                                 <li>
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Почта" required="">
+                                 </li>
+                              </ul>
+                              <button type="submit" class="basket__quantity-btns-btn mt-4">
+                                 продолжить
+                              </button>
+                           </div>
+                        </form>
                      </div>
                   </div>
                </div>
@@ -64,6 +89,11 @@
             <div class="row">
                <div class="col">
                   <nav class="row header__nav">
+                     <div class="header__menu-burger">
+                        <div class="header__burger">
+                           <span></span>
+                        </div>
+                     </div>
                      <div class="col-md-6 ">
                         <ul class="header__list">
                            <li class="header__li"><a href="#">О КОМПАНИИ</a></li>
@@ -76,7 +106,10 @@
                         <a class="header__backet">
                            Корзина
                         </a>
-                        <a>
+                        <div class="hidden-basket">
+                           что-то в корзине
+                        </div>
+                        <a class="header__backet-text">
                            ВАША КОРЗИНА ПУСТА
                         </a>
                      </div>
@@ -88,7 +121,7 @@
             <div class="main__navigation">
                <div class="container">
                   <div class="row">
-                     <div class="col">
+                     <div class="col d-flex flex-column align-items-md-start align-items-center">
                         <ul class="main__list">
                            <li class="main__li"><a href="#">Шины </a></li>
                            <li class="main__li"><a href="#">Диски</a></li>
@@ -113,15 +146,36 @@
                      <div class="col-lg-6 ">
                         <form class="options-panel d-flex flex-column align-items-center">
                            <div class="row d-flex ">
-                              <div class="col-sm-6">
-                                 <div class="options-panel__item">
-                                    <input type="text" class="options-panel__input" placeholder="Ширина">
-                                    <div class="options-panel__button">
-                                       <img src="img/icons/next.svg" alt="">
+                              <div class="col-sm-6 d-flex justify-content-center">
+                                 <div class="options-panel__block">
+                                    <div class="options-panel__item">
+                                       <input type="text" class="options-panel__input" placeholder="Ширина">
+                                       <div class="options-panel__button">
+                                          <img src="img/icons/next.svg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="hidden-block">
+                                       <ul class="hidden-list">
+                                          <li>
+                                             <a href="#" class="options-panel__item-hidden">22,5 д</a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="options-panel__item-hidden">22,5 д</a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="options-panel__item-hidden">22,5 д</a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="options-panel__item-hidden">22,5 д</a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="options-panel__item-hidden">22,5 д</a>
+                                          </li>
+                                       </ul>
                                     </div>
                                  </div>
                               </div>
-                              <div class="col-sm-6">
+                              <div class="col-sm-6 d-flex justify-content-center">
                                  <div class="options-panel__item">
                                     <input type="text" class="options-panel__input" placeholder="Диаметр">
                                     <div class="options-panel__button">
@@ -129,7 +183,7 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="col-sm-6">
+                              <div class="col-sm-6 d-flex justify-content-center">
                                  <div class="options-panel__item">
                                     <input type="text" class="options-panel__input" placeholder="ВЫСОТА">
                                     <div class="options-panel__button">
@@ -137,7 +191,7 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="col-sm-6">
+                              <div class="col-sm-6 d-flex justify-content-center">
                                  <div class="options-panel__item">
                                     <input type="text" class="options-panel__input" placeholder="ПРОИЗВОДИТЕЛЬ">
                                     <div class="options-panel__button">
@@ -152,7 +206,7 @@
                            </button>
                         </form>
                      </div>
-                     <div class="col-lg-6">
+                     <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center mt-lg-0 mt-5">
                         <img src="img/car-main.png" alt="">
                      </div>
                   </div>
@@ -180,7 +234,7 @@
                            <div class="slider-catalog__item ">
                               <img src="img/shina.png" alt="">
                               <div class="slider-catalog__item-name">
-                                 <a href="#">
+                                 <a class="stretched-link" href="#">
                                     R16
                                     <span>
                                        от 2690 руб.
@@ -268,25 +322,25 @@
                         </div>
                      </div>
                   </div>
-                  <div class="row mt-5">
-                     <div class="col-sm-3 d-flex flex-column text-center">
+                  <div class="row mt-3">
+                     <div class="col-sm-3 mt-4 d-flex flex-column text-center">
                         <img src="img/icons/sale.svg" alt="">
                         <span class="mt-3">
                            Скидка на шиномонтаж </span>
                      </div>
-                     <div class="col-sm-3 d-flex flex-column text-center">
+                     <div class="col-sm-3 mt-4  d-flex flex-column text-center">
                         <img src="img/icons/wheel.svg" alt="">
                         <span class="mt-3">
                            Автозапчасти<br> от официальных диллеров
                         </span>
                      </div>
-                     <div class="col-sm-3 d-flex flex-column text-center">
+                     <div class="col-sm-3 mt-4  d-flex flex-column text-center">
                         <img src="img/icons/card&hand.svg" alt="">
                         <span class="mt-3">
                            Дисконтная карта <br> с
                            кэшбэком </span>
                      </div>
-                     <div class="col-sm-3 d-flex flex-column text-center">
+                     <div class="col-sm-3 mt-4  d-flex flex-column text-center">
                         <img src="img/icons/contract.svg" alt="">
                         <span class="mt-3">
                            Гарантия на <br> шины и
@@ -379,21 +433,23 @@
    <footer class="footer">
       <div class="container">
          <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3 d-flex justify-content-center">
                <a href="#"><img src="img/Logo.png" alt="Logo"></a>
             </div>
-            <div class="col-md-3 d-flex flex-column footer__rules">
+            <div
+               class="col-lg-3  col-sm-6 d-flex flex-column footer__rules justify-content-start align-items-sm-start align-items-center  mb-sm-5 mt-sm-5 mt-lg-0">
                <span>«Авто восток», Тюмень, 2016-2020</span>
                <span>Все права защищены.</span>
                <span>Не является публичной офертой</span>
             </div>
-            <div class="col-md-4 ">
+            <div
+               class="col-xl-4 col-lg-3 col-sm-6 d-flex flex-column justify-content-start align-items-center mt-sm-5 mb-sm-5 mt-lg-0">
                <div class="footer__links">
                   <a>Политика конфиденциальности</a>
                   <a>Согласие на обработку персональных данных</a>
                </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-xl-2 col-lg-3  d-flex flex-column justify-content-start align-items-center">
                <div class="accent-btn">
                   <a>Оставить заявку</a>
                </div>
@@ -408,7 +464,6 @@
          </div>
       </div>
    </footer>
-
 
 
 
