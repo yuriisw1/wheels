@@ -21,14 +21,12 @@
          <header class="header">
             <div class="container">
                <div class="row header__contacts d-flex">
-                  <div class="col-lg-12 col-xl-3 d-flex justify-content-center ">
-                     <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+                  <div class=" col-xl-3 col-6">
+                     <a href="index.html"><img class="logo" src="img/Logo.png" alt="Logo"></a>
                   </div>
-                  <div class="col-md-4 col-xl-1 d-flex justify-content-center mt-xl-0 mt-4 header__address">
+                  <div data-da="header__nav, 2, 1200" class="d-xl-block d-none col-xl-3  mt-xl-0 mt-4 header__address">
                      г. Тюмень ул.
                      Автогенная 105 к2
-                  </div>
-                  <div class="col-md-4 col-xl-2 d-flex justify-content-center mt-xl-0 mt-4">
                      <div class="social">
                         <a href="#"><img src="img/icons/vk.svg" alt=""></a>
                         <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
@@ -37,22 +35,21 @@
                         <a href="#"><img src="img/icons/facebook.svg" alt=""></a>
                      </div>
                   </div>
-                  <div
-                     class="col-md-4 col-xl-2 d-flex flex-column align-items-xl-start align-items-center mt-xl-0 mt-4">
-                     <span class="header__worktime">График работы: </span>
+                  <div data-da="header__nav, 3, 1200"
+                     class=" d-xl-block d-none  col-xl-2 mt-xl-0 mt-4 header__worktime">
+                     <span>График работы: </span>
                      <span>
                         пн-сб 9:00-19:00, <br>
                         вс - 10:00 - 17:00
                      </span>
                   </div>
-                  <div
-                     class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-start mt-xl-0 mt-4">
+                  <div data-da="header__nav, 4, 1200"
+                     class=" d-xl-block d-none col-xl-2 d-xl-flex flex-column mt-xl-0 mt-4 header__telephone">
                      <a href="#" class="header__mobile">3322 - 685-395</a>
                      <a href="#" class="header__mobile">522-462</a>
                      <a href="#" class="header__insta">@avtovost2</a>
                   </div>
-                  <div class="col-md-4 d-xl-none"></div>
-                  <div class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-end mt-xl-0 mt-4">
+                  <div data-da="header__nav, 5, 1200" class="d-xl-block d-none col-xl-2 header__callto">
                      <a href="#" class="header__mobile">
                         8-912-040-43-96
                      </a>
@@ -67,7 +64,8 @@
                                  </li>
                                  <li>
 
-                                    <input type="text" class="basket__step-input mt-4" placeholder="Телефон" required="">
+                                    <input type="text" class="basket__step-input mt-4" placeholder="Телефон"
+                                       required="">
 
                                  </li>
                                  <li>
@@ -81,6 +79,11 @@
                         </form>
                      </div>
                   </div>
+                  <div class="header__menu-burger">
+                     <div class="header__burger">
+                        <span></span>
+                     </div>
+                  </div>
                </div>
             </div>
          </header>
@@ -88,12 +91,7 @@
             <div class="row">
                <div class="col">
                   <nav class="row header__nav">
-                     <div class="header__menu-burger">
-                        <div class="header__burger">
-                           <span></span>
-                        </div>
-                     </div>
-                     <div class="col-md-6 ">
+                     <div class="col-md-7 d-flex align-items-center justify-content-xl-start justify-content-center">
                         <ul class="header__list">
                            <li class="header__li"><a href="#">О КОМПАНИИ</a></li>
                            <li class="header__li"><a href="#">покупателю </a></li>
@@ -101,19 +99,70 @@
                            <li class="header__li"><a href="#">контакты</a></li>
                         </ul>
                      </div>
-                     <div class="col-md-6 d-flex justify-content-end">
-                        <a class="header__backet">
-                           Корзина
-                        </a>
-                        <a class="header__backet-text">
-                           ВАША КОРЗИНА ПУСТА
-                        </a>
+                     <div class="col-md-5 d-xl-flex justify-content-end d-xl-block d-none">
+                        <div data-da="header__contacts, 6, 1200" class="header__backet-block">
+                           <div class="header__basket-block">
+                              <a class="header__backet">
+                                 Корзина
+                              </a>
+                              <div class="hidden-basket">
+                                 что-то в корзине
+                              </div>
+                              <a class="header__backet-text">
+                                 ВАША КОРЗИНА ПУСТА
+                              </a>
+                           </div>
+                        </div>
                      </div>
                   </nav>
                </div>
             </div>
          </div>
          <main>
+            <div class="main__navigation">
+               <div class="container">
+                  <div class="row">
+                     <div class="col d-flex flex-column align-items-md-start align-items-center">
+                        <ul class="main__list">
+                           <li class="main__li"><a href="#">Шины </a></li>
+                           <li class="main__li"><a href="#">Диски</a></li>
+                           <li class="main__li"><a href="#">Запчасти </a></li>
+                           <li class="main__li"><a href="#">Экспресс СТО</a></li>
+                           <li class="main__li"><a href="#">Кузовные детали</a></li>
+                        </ul>
+                        <div class="row  d-flex justify-content-xs-start justify-content-center align-items-center"
+                           style="width: 100%">
+                           <div
+                              class="col-sm-8 col-md-8 d-flex justify-content-sm-start justify-content-center align-items-center">
+                              <div class="main__search">
+                                 <ul class="main__search-list">
+                                    <li><a href="#">Поиск:</a></li>
+                                    <li><a href="#" class="main__search-link">По параметрам</a></li>
+                                    <li><a href="#" class="main__search-link"> ПО АВТОМОБИЛЮ</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div
+                              class="col-xs-4 col-sm-4 d-flex justify-content-sm-end justify-content-center align-items-center mt-sm-0 mt-3">
+                              <div class="radiobuttons">
+                                 <div class="radiobuttons__item">
+                                    <input type="radio" value="1" name="nameradio">
+                                    Лето
+                                 </div>
+                                 <div class="radiobuttons__item">
+                                    <input type="radio" value="2" name="nameradio">
+                                    Зима
+                                 </div>
+
+                              </div>
+                           </div>
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div class="product">
                <div class="container">
                   <div class="row">
@@ -122,13 +171,12 @@
                            <nav class="col-4 tabs__items d-flex align-items-center flex-column justify-content-center">
                               <span style="margin-bottom: 15px;" class="tabs__link"><img src="img/wheel-item.png"
                                     alt=""></span>
-                              <span class="product__photo-link tabs__link"><img src="img/wheel-item.png"
-                                    alt=""></span>
+                              <span class="product__photo-link tabs__link"><img src="img/wheel-item.png" alt=""></span>
                            </nav>
                            <div class="col-8 d-flex align-items-center justify-content-center tabs__body">
                               <a href="img/wheel-item.png" class="image-popup-no-margins">
-                                 <img class="tabs__block image-popup-no-margins tabs__content" id="01" src="img/wheel-item.png"
-                                    alt="">
+                                 <img class="tabs__block image-popup-no-margins tabs__content" id="01"
+                                    src="img/wheel-item.png" alt="">
                               </a>
                               <a href="img/wheel-item.png" class="image-popup-no-margins">
                                  <img class="tabs__block tabs__content" id="02" src="img/wheel-basket.png" alt=""></a>
@@ -259,14 +307,14 @@
                <a href="#"><img src="img/Logo.png" alt="Logo"></a>
             </div>
             <div
-               class="col-lg-3  col-sm-6 d-flex flex-column footer__rules justify-content-start align-items-sm-start align-items-center  mb-sm-5 mt-sm-5 mt-lg-0">
+               class=" col-lg-3 d-flex flex-column footer__rules justify-content-start align-items-center align-items-lg-start  mb-sm-4 mt-sm-5 mt-lg-0">
                <span>«Авто восток», Тюмень, 2016-2020</span>
                <span>Все права защищены.</span>
                <span>Не является публичной офертой</span>
             </div>
             <div
-               class="col-xl-4 col-lg-3 col-sm-6 d-flex flex-column justify-content-start align-items-center mt-sm-5 mb-sm-5 mt-lg-0">
-               <div class="footer__links">
+               class="col-xl-3 col-lg-3 d-flex flex-column justify-content-start align-items-center mb-sm-2 mt-lg-0">
+               <div class="footer__links text-center text-lg-left">
                   <a>Политика конфиденциальности</a>
                   <a>Согласие на обработку персональных данных</a>
                </div>

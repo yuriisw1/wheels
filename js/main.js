@@ -99,7 +99,7 @@ jQuery(document).ready(function () {
 
    $(document).ready(function () {
       $('.header__menu-burger').click(function (event) {
-         $('.header__burger,.header__list,.header__menu-burger').toggleClass('active');
+         $('.header__burger,.header__nav,.header__menu-burger').toggleClass('active');
          $('body').toggleClass('lock');
       });
 

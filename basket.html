@@ -21,14 +21,12 @@
          <header class="header">
             <div class="container">
                <div class="row header__contacts d-flex">
-                  <div class="col-lg-12 col-xl-3 d-flex justify-content-center ">
-                     <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+                  <div class=" col-xl-3 col-6">
+                     <a href="index.html"><img class="logo" src="img/Logo.png" alt="Logo"></a>
                   </div>
-                  <div class="col-md-4 col-xl-1 d-flex justify-content-center mt-xl-0 mt-4 header__address">
+                  <div data-da="header__nav, 2, 1200" class="d-xl-block d-none col-xl-3  mt-xl-0 mt-4 header__address">
                      г. Тюмень ул.
                      Автогенная 105 к2
-                  </div>
-                  <div class="col-md-4 col-xl-2 d-flex justify-content-center mt-xl-0 mt-4">
                      <div class="social">
                         <a href="#"><img src="img/icons/vk.svg" alt=""></a>
                         <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
@@ -37,22 +35,21 @@
                         <a href="#"><img src="img/icons/facebook.svg" alt=""></a>
                      </div>
                   </div>
-                  <div
-                     class="col-md-4 col-xl-2 d-flex flex-column align-items-xl-start align-items-center mt-xl-0 mt-4">
-                     <span class="header__worktime">График работы: </span>
+                  <div data-da="header__nav, 3, 1200"
+                     class=" d-xl-block d-none  col-xl-2 mt-xl-0 mt-4 header__worktime">
+                     <span>График работы: </span>
                      <span>
                         пн-сб 9:00-19:00, <br>
                         вс - 10:00 - 17:00
                      </span>
                   </div>
-                  <div
-                     class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-start mt-xl-0 mt-4">
+                  <div data-da="header__nav, 4, 1200"
+                     class=" d-xl-block d-none col-xl-2 d-xl-flex flex-column mt-xl-0 mt-4 header__telephone">
                      <a href="#" class="header__mobile">3322 - 685-395</a>
                      <a href="#" class="header__mobile">522-462</a>
                      <a href="#" class="header__insta">@avtovost2</a>
                   </div>
-                  <div class="col-md-4 d-xl-none"></div>
-                  <div class="col-md-4 col-xl-2 d-flex flex-column align-items-center align-items-xl-end mt-xl-0 mt-4">
+                  <div data-da="header__nav, 5, 1200" class="d-xl-block d-none col-xl-2 header__callto">
                      <a href="#" class="header__mobile">
                         8-912-040-43-96
                      </a>
@@ -82,6 +79,11 @@
                         </form>
                      </div>
                   </div>
+                  <div class="header__menu-burger">
+                     <div class="header__burger">
+                        <span></span>
+                     </div>
+                  </div>
                </div>
             </div>
          </header>
@@ -89,12 +91,7 @@
             <div class="row">
                <div class="col">
                   <nav class="row header__nav">
-                     <div class="header__menu-burger">
-                        <div class="header__burger">
-                           <span></span>
-                        </div>
-                     </div>
-                     <div class="col-md-6 ">
+                     <div class="col-md-7 d-flex align-items-center justify-content-xl-start justify-content-center">
                         <ul class="header__list">
                            <li class="header__li"><a href="#">О КОМПАНИИ</a></li>
                            <li class="header__li"><a href="#">покупателю </a></li>
@@ -102,13 +99,20 @@
                            <li class="header__li"><a href="#">контакты</a></li>
                         </ul>
                      </div>
-                     <div class="col-md-6 d-flex justify-content-end">
-                        <a class="header__backet">
-                           Корзина
-                        </a>
-                        <a class="header__backet-text">
-                           ВАША КОРЗИНА ПУСТА
-                        </a>
+                     <div class="col-md-5 d-xl-flex justify-content-end d-xl-block d-none">
+                        <div data-da="header__contacts, 6, 1200" class="header__backet-block">
+                           <div class="header__basket-block">
+                              <a class="header__backet">
+                                 Корзина
+                              </a>
+                              <div class="hidden-basket">
+                                 что-то в корзине
+                              </div>
+                              <a class="header__backet-text">
+                                 ВАША КОРЗИНА ПУСТА
+                              </a>
+                           </div>
+                        </div>
                      </div>
                   </nav>
                </div>
@@ -180,11 +184,6 @@
                      </div>
 
                   </div>
-                  <div class="row">
-                     <div class="col step-title">
-                        <strong>Шаг 2.</strong>Контактные данные
-                     </div>
-                  </div>
                   <div class="row basket__step">
                      <div class="col ">
                         <form class="basket__form">
@@ -206,13 +205,12 @@
                               </div>
                               <div
                                  class="col-xl-3 col-sm-6 mt-xl-0 mt-3 justify-content-center d-flex justify-content-xl-start">
-                                 <label>
-                                    <input type="checkbox" class="basket__step-checkbox">
-                                    <span class="basket__step-checkbox-fake"></span>
-                                    <span class="basket__step-text">Нажимая на кнопку Продолжить вы
-                                       соглашаетесь с офертой и
-                                       условиями обработки персональных данных</span>
-                                 </label>
+                                 <div class="radiobuttons__item">
+                                    <input type="radio" value="1" name="nameradio">
+                                    Нажимая на кнопку Продолжить вы
+                                    соглашаетесь с офертой и
+                                    условиями обработки персональных данных
+                                 </div>
                               </div>
                            </div>
                            <div class="row basket__quantity-btns">
@@ -228,11 +226,6 @@
                               </div>
                            </div>
                         </form>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col step-title">
-                        <strong>Шаг 3.</strong>Доставка
                      </div>
                   </div>
                   <div class="row basket__step">
@@ -252,10 +245,6 @@
                                        <input type="radio" value="2" name="nameradio">
                                        Доставка по городу
                                     </div>
-                                    <div class="radiobuttons__item">
-                                       <input type="radio" value="3" name="nameradio">
-                                       Доставка по области
-                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -272,11 +261,6 @@
                               </div>
                            </div>
                         </form>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col step-title">
-                        <strong>Шаг 4.</strong>Самовывоз
                      </div>
                   </div>
                   <div class="row basket__step">
@@ -313,11 +297,6 @@
                               </div>
                            </div>
                         </form>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col step-title">
-                        <strong>Шаг 5.</strong>Получение и оплата
                      </div>
                   </div>
                   <div class="row basket__step">
@@ -370,6 +349,10 @@
                                        Онлайн
                                        оплата
                                     </div>
+                                    <div class="radiobuttons__item">
+                                       <input type="radio" value="3" name="nameradio">
+                                       Оплата в магазине
+                                    </div>
 
                                  </div>
                               </div>
@@ -405,14 +388,14 @@
                <a href="#"><img src="img/Logo.png" alt="Logo"></a>
             </div>
             <div
-               class="col-lg-3  col-sm-6 d-flex flex-column footer__rules justify-content-start align-items-sm-start align-items-center  mb-sm-5 mt-sm-5 mt-lg-0">
+               class=" col-lg-3 d-flex flex-column footer__rules justify-content-start align-items-center align-items-lg-start  mb-sm-4 mt-sm-5 mt-lg-0">
                <span>«Авто восток», Тюмень, 2016-2020</span>
                <span>Все права защищены.</span>
                <span>Не является публичной офертой</span>
             </div>
             <div
-               class="col-xl-4 col-lg-3 col-sm-6 d-flex flex-column justify-content-start align-items-center mt-sm-5 mb-sm-5 mt-lg-0">
-               <div class="footer__links">
+               class="col-xl-3 col-lg-3 d-flex flex-column justify-content-start align-items-center mb-sm-2 mt-lg-0">
+               <div class="footer__links text-center text-lg-left">
                   <a>Политика конфиденциальности</a>
                   <a>Согласие на обработку персональных данных</a>
                </div>
